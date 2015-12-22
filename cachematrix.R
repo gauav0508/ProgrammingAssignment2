@@ -36,7 +36,7 @@ cacheSolve <- function(x) {
   }
   data <- x$get()
   invm <- solve(data) %*% data ## calculating the inverted matrix
-  x$setinvmat(invm) 
+  x$setinvmat(invm)  ## sets the value to cache
   invm
 }
 
